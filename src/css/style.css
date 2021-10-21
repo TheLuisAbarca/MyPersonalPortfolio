@@ -1,0 +1,111 @@
+body{
+    background: #191765;
+}
+
+#firstBackground{
+    background-image: url("../img/two_circles_header.png");
+    background-repeat: no-repeat;
+}
+
+/**Defining the base of my little grid system using flex*/
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+/*Justifying Flex*/
+.justify-spacearound{
+    justify-content: space-around;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+/*Text Aligning*/
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/*Some Modifications to defaults styles of h2*/
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+/*Styles of the Figma templates*/
+.titleHeader {
+    color: #7D73FC;
+}
+
+.titleHeaderFontStyle{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.subtitleHeader{
+    color: #EDECFF;
+}
+
+.subtitleHeaderFontStyle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.contentHeader{
+    color: #B3BAC5
+}
+
+.nav-links{
+    color: #FFFFFF;
+}
+
+.text-purple{
+    color: #9390FF;
+
+}
+
+/*Display Links only when they are desktop and hamburguer icon when is mobile*/
+@media (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+    .shown-mobile {
+        display: none;
+    }
+}

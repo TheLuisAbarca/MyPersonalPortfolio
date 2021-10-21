@@ -2,6 +2,7 @@
 
 My portfolio where I show to the world what can i offer them.
 
+![screenshot](./app_portfolio_main.png)
 
 In this project I show my skills and my other projects and is a way to centralize all my projects.
 

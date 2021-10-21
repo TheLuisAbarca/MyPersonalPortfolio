@@ -1,57 +1,57 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background: #191765;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #191765;
 }
 
-#firstBackground{
-    background-image: url("../img/two_circles_header.png");
-    background-repeat: no-repeat;
+#firstBackground {
+  background-image: url("../img/two_circles_header.png");
+  background-repeat: no-repeat;
 }
 
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 10px solid goldenrod;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 10px solid goldenrod;
 }
 
-.ham-button{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    color: white;
-    background-color: #191765;
-    font-size: 25px;
-    margin-left: auto;
-    cursor: pointer;
-    border: 0;
+.ham-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: white;
+  background-color: #191765;
+  font-size: 25px;
+  margin-left: auto;
+  cursor: pointer;
+  border: 0;
 }
 
-.justifyFlexcomponentsXY{
-    justify-content: center;
-    align-items: center;
+.justifyFlexcomponentsXY {
+  justify-content: center;
+  align-items: center;
 }
 
 hr.solid {
-    width: 100%;
-    justify-content: center;
-    border: 1px solid #646369;
-    top: calc(50% - 0px/2 + 0.5px);
+  width: 100%;
+  justify-content: center;
+  border: 1px solid #646369;
+  top: calc(50% - 0px / 2 + 0.5px);
 }
 
-.knowledge{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
+.knowledge {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-.skillbox{
-    width: 50%;
+.skillbox {
+  width: 50%;
 }
 
-/*Navbar styles*/
+/* Navbar styles */
 .navbar {
   color: #28352f;
   font-weight: 600;
@@ -66,64 +66,65 @@ hr.solid {
   display: none;
 }
 
-/**/
+/* Introduction style */
 .intro {
   display: flex;
   flex-direction: column;
   padding: 64px 24px;
-  margin: 24px 0px;
+  margin: 24px;
   background-image: url("../img/Top_circles_mobile.png");
   background-size: cover;
 }
 
-/*Styles of the Figma templates*/
+/* Styles of the Figma templates */
 .titleHeader {
-    color: #7D73FC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    text-align: center;
-    letter-spacing: 0.37px;
-    margin: 12px 0px;
+  color: #7d73fc;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  margin: 12px;
 }
 
-.subtitleHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #EDECFF;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 44px;
-    text-align: center;
+.subtitleHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #edecff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
 }
 
-.contentHeader{
-    color: #B3BAC5;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
+.contentHeader {
+  color: #b3bac5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
 }
 
-.nav-links, .nav-wordsColor{
-    color: #FFFFFF;
+.nav-links,
+.nav-wordsColor {
+  color: #fff;
 }
 
-.text-purple{
-    color: #9390FF;
+.text-purple {
+  color: #9390ff;
 }
 
-/*Social Media Icons styles*/
+/* Social Media Icons styles */
 .social-links {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 2rem;
-    list-style-type: none;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 2rem;
+  list-style-type: none;
+  padding: 0;
 }
 
 .social-links > a,
@@ -133,18 +134,18 @@ a:visited {
 }
 
 i {
-    padding: 10px;
+  padding: 10px;
 }
 
-/*Display Links only when they are desktop and hamburguer icon when is mobile*/
+/* Display Links only when they are desktop and hamburguer icon when is mobile */
 @media (max-width: 767px) {
-    .hidden-mobile {
-        display: none;
-    }
+  .hidden-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 767px) {
-    .shown-mobile {
-        display: none;
-    }
+  .shown-mobile {
+    display: none;
+  }
 }

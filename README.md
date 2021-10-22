@@ -13,20 +13,7 @@ In this project I show my skills and my other projects and is a way to centraliz
 
 ## Getting Started
 
-
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 ## Authors
 

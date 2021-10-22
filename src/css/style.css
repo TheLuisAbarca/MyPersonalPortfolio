@@ -50,7 +50,7 @@ hr.solid {
   width: 50%;
 }
 
-.skillboxPL{
+.skillboxPL {
   padding-left: 50px;
 }
 
@@ -74,7 +74,7 @@ hr.solid {
   display: flex;
   flex-direction: column;
   background-image: url("../img/Top_circles_mobile.png");
-  background-size: 600px 580px ;
+  background-size: 600px 580px;
   background-repeat: no-repeat;
 }
 
@@ -115,7 +115,7 @@ hr.solid {
   color: #fff;
 }
 
-.nav-name{
+.nav-name {
   padding-left: 15px;
 }
 

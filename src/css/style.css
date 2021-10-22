@@ -39,6 +39,14 @@ hr.solid {
   top: calc(50% - 0px / 2 + 0.5px);
 }
 
+hr.workseparator {
+  width: 100%;
+  justify-content: center;
+  border: 1px solid #646369;
+  margin-top: calc(15% - 0px / 2 + 0.5px);
+  margin-bottom: calc(15% - 0px / 2 + 0.5px);
+}
+
 .knowledge {
   display: flex;
   flex-direction: row;
@@ -141,6 +149,174 @@ a:visited {
 
 i {
   padding: 10px;
+}
+
+/* Grid container styles */
+.elipse19 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/Ellipse\ 19@2x.png");
+  background-size: 600px 580px;
+  background-repeat: no-repeat;
+}
+
+.elipse20 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/Ellipse\ 20@2x.png");
+  background-size: 600px 580px;
+  background-repeat: no-repeat;
+}
+
+.elipse21 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/Ellipse\ 21@2x.png");
+  background-size: 600px 580px;
+  background-repeat: no-repeat;
+}
+
+.elipse22{
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/Ellipse\ 22@2x.png");
+  background-size: 600px 580px;
+  background-repeat: no-repeat;
+}
+
+.section-work {
+  display: flex;
+  flex-direction: column;
+}
+
+.generic-grid-container {
+  display: grid;
+  margin-bottom: 42px;
+}
+
+.headWorkTitlecont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #a2a3ae;
+}
+
+.work-container {
+  display: grid;
+  justify-items: center;
+}
+
+.workCard-container {
+  margin-bottom: calc(5% - 0px / 2 + 0.5px);
+}
+
+.header-work {
+  display: flex;
+  align-items: center;
+  position: static;
+  width: 327px;
+  height: 104px;
+  left: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 24px;
+  color: #9490ff;
+}
+
+.image-work {
+  display: flex;
+  align-items: center;
+}
+
+.title-work {
+  position: static;
+  width: 327px;
+  height: 105px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.content-work {
+  position: static;
+  width: 327px;
+  height: 204px;
+  top: 129px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px;
+}
+
+.langFrame-work {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lang-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 32px;
+}
+
+.separator-lang {
+  border-right: solid 2px #555;
+  padding-right: 30px;
+}
+
+.language-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.projectButton-work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  position: static;
+  width: 89px;
+  height: 48px;
+  top: 421px;
+  background: #7d73fc;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 24px;
+  border: 0;
+  cursor: pointer;
+}
+
+.pButtonW-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #edecff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px;
 }
 
 /* Display Links only when they are desktop and hamburguer icon when is mobile */

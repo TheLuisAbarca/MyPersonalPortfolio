@@ -13,7 +13,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 10px solid goldenrod;
 }
 
 .ham-button {
@@ -34,7 +33,7 @@ body {
 }
 
 hr.solid {
-  width: 100%;
+  width: 80%;
   justify-content: center;
   border: 1px solid #646369;
   top: calc(50% - 0px / 2 + 0.5px);
@@ -49,6 +48,10 @@ hr.solid {
 
 .skillbox {
   width: 50%;
+}
+
+.skillboxPL{
+  padding-left: 50px;
 }
 
 /* Navbar styles */
@@ -70,10 +73,9 @@ hr.solid {
 .intro {
   display: flex;
   flex-direction: column;
-  padding: 64px 24px;
-  margin: 24px;
   background-image: url("../img/Top_circles_mobile.png");
-  background-size: cover;
+  background-size: 600px 580px ;
+  background-repeat: no-repeat;
 }
 
 /* Styles of the Figma templates */
@@ -111,6 +113,10 @@ hr.solid {
 .nav-links,
 .nav-wordsColor {
   color: #fff;
+}
+
+.nav-name{
+  padding-left: 15px;
 }
 
 .text-purple {

@@ -13,7 +13,11 @@ In this project I show my skills and my other projects and is a way to centraliz
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple example steps:
+
+- Select the link with the code on the https code tab in the repo.
+- Open a Terminal and write the command: git clone "TheLinkWithCode".
+- Drag the index.html to any browser.
 
 ## Authors
 

@@ -147,6 +147,14 @@ a:visited {
   color: #abbfe2;
 }
 
+a.headWorkTitlecont:link {
+  text-decoration: none;
+}
+
+a.headWorkTitlecont:hover {
+  text-decoration: none;
+}
+
 i {
   padding: 10px;
 }

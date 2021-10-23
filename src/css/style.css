@@ -187,6 +187,7 @@ i {
 .section-work {
   display: flex;
   flex-direction: column;
+  padding: 120px, 0px, 120px, 0px;
 }
 
 .generic-grid-container {

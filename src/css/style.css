@@ -86,6 +86,11 @@ hr.workseparator {
   background-repeat: no-repeat;
 }
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Styles of the Figma templates */
 .titleHeader {
   color: #7d73fc;

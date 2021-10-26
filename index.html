@@ -289,14 +289,15 @@
                 <form action="https://formspree.io/f/mleakveq" method="post" class="formContentList">
                     <ul class="formList">
                         <li>
-                          <input type="text" id="name" name="user_name">
+                          <input type="text" id="name" name="user_name" required maxlength="30" placeholder="Name">
                         </li>
                         <li>
-                          <input type="email" id="mail" name="user_email">
+                          <input type="email" id="mail" name="user_email" required placeholder="Email">
                         </li>
                         <li>
-                          <textarea id="msg" name="user_message" placeholder="Enter text here"></textarea>
+                          <textarea id="msg" name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
                         </li>
+                        <li><button class="projectButton-work pButtonW-text" type="submit">Submit</button></li>
                     </ul>
                 </form>
                 <ul class="social-links formSocialNetwork">

@@ -360,28 +360,40 @@ i {
 .formList {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
+  width: 327px;
   padding-inline-start: 0;
 }
 
 .styleform {
-  font-family: 'Inter', sans-serif ;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
+  width: 100%;
+}
+
+ul.formList > li {
+  display: flex;
   margin-bottom: 24px;
+  width: 100%;
+  justify-items: center;
+}
+
+ul.formList > li > input,
+textarea {
   width: 100%;
 }
 
 .formHeader {
   width: 327px;
   height: 35px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -391,18 +403,18 @@ i {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #9390FF;
+  color: #9390ff;
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .formContent {
   position: static;
   width: 327px;
   height: 105px;
-  left: 0px;
+  left: 0;
   top: 59px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -410,12 +422,11 @@ i {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #F5F5FF;
+  color: #f5f5ff;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 24px 0px;
-
+  margin: 24px 0;
 }
 
 .formContentList {
@@ -423,25 +434,31 @@ i {
   flex-grow: 0;
 }
 
+.formButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .formSocialNetwork {
   order: 3;
   flex-grow: 0;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .formEmail {
   order: 4;
   flex-grow: 0;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
-  margin-top: 0px;
-  padding-top: 0px;
+  color: #ebebff;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 #msg {

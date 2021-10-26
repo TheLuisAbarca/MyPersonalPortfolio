@@ -350,6 +350,83 @@ i {
   margin: 10px;
 }
 
+.contactMeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formList {
+  list-style-type: none;
+}
+
+.formHeader {
+  width: 327px;
+  height: 35px;
+  left: 0px;
+  top: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #9390FF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.formContent {
+  position: static;
+  width: 327px;
+  height: 105px;
+  left: 0px;
+  top: 59px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #F5F5FF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.formContentList {
+  order: 2;
+  flex-grow: 0;
+}
+
+.formSocialNetwork {
+  order: 3;
+  flex-grow: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.formEmail {
+  order: 4;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
 /* Display Links only when they are desktop and hamburguer icon when is mobile */
 @media (max-width: 767px) {
   .hidden-mobile {

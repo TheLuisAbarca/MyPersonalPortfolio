@@ -466,13 +466,36 @@ textarea {
   flex-grow: 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
   margin-top: 0;
   padding-top: 0;
+  height: 29px;
+  width: 221px;
+}
+
+.formEmailLink {
+  display: flex;
+  flex-direction: row;
+  height: 29px;
+  width: 221px;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #a2a3ae;
+}
+
+a.formEmailLink:link {
+  text-decoration: none;
+}
+
+a.formEmailLink:hover {
+  text-decoration: none;
 }
 
 #msg {

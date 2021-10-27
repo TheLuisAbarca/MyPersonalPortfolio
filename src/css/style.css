@@ -350,6 +350,159 @@ i {
   margin: 10px;
 }
 
+.contactMeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formList {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 327px;
+  padding-inline-start: 0;
+}
+
+.styleform {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.height_textarea {
+  height: 148px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+ul.formList > li {
+  display: flex;
+  margin-bottom: 24px;
+  width: 100%;
+  justify-items: center;
+}
+
+ul.formList > li > input,
+textarea {
+  width: 100%;
+}
+
+.formHeader {
+  width: 327px;
+  height: 35px;
+  left: 0;
+  top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #9390ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 0;
+}
+
+.formContent {
+  position: static;
+  width: 327px;
+  height: 105px;
+  left: 0;
+  top: 59px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0;
+}
+
+.formContentList {
+  order: 2;
+  flex-grow: 0;
+}
+
+.formButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.formSocialNetwork {
+  order: 3;
+  flex-grow: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.formEmail {
+  order: 4;
+  flex-grow: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-top: 0;
+  padding-top: 0;
+  height: 29px;
+  width: 221px;
+}
+
+.formEmailLink {
+  display: flex;
+  flex-direction: row;
+  height: 29px;
+  width: 221px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #a2a3ae;
+}
+
+a.formEmailLink:link {
+  text-decoration: none;
+}
+
+a.formEmailLink:hover {
+  text-decoration: none;
+}
+
+#msg {
+  overflow: auto;
+  resize: none;
+}
+
 /* Display Links only when they are desktop and hamburguer icon when is mobile */
 @media (max-width: 767px) {
   .hidden-mobile {

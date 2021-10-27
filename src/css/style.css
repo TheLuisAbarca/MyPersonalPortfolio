@@ -482,7 +482,7 @@ textarea {
   width: 221px;
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;

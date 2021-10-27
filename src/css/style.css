@@ -421,7 +421,7 @@ textarea {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 24px 0;
+  margin-bottom: 0;
 }
 
 .formContent {

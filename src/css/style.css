@@ -277,21 +277,34 @@ i {
 }
 
 .langFrame-work {
-  display: flex;
+  /*display: flex;*/
   justify-content: space-around;
 }
 
 .lang-box {
-  display: flex;
+  /*display: flex;*/
+  float: left;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 32px;
 }
 
+ul.langFrame-work {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .separator-lang {
   border-right: solid 2px #555;
   padding-right: 30px;
+  padding-left: 30px;
+}
+
+.finalSkill {
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .language-text {

@@ -375,6 +375,20 @@ i {
   letter-spacing: 0;
   text-align: left;
   width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.height_textarea {
+  height: 148px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 ul.formList > li {

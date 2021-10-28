@@ -4,6 +4,11 @@ body {
   background: #191765;
 }
 
+footer {
+  border-top: 1px solid #3a3837;
+  margin-top: 71px;
+}
+
 #firstBackground {
   background-image: url("../img/two_circles_header.png");
   background-repeat: no-repeat;
@@ -33,7 +38,8 @@ body {
 }
 
 hr.solid {
-  width: 80%;
+  min-width: 327px;
+  max-width: 426px;
   justify-content: center;
   border: 1px solid #646369;
   top: calc(50% - 0px / 2 + 0.5px);
@@ -43,8 +49,8 @@ hr.workseparator {
   width: 100%;
   justify-content: center;
   border: 1px solid #646369;
-  margin-top: calc(15% - 0px / 2 + 0.5px);
-  margin-bottom: calc(15% - 0px / 2 + 0.5px);
+  margin-top: calc(12% - 0px / 2 + 0.5px);
+  margin-bottom: calc(12% - 0px / 2 + 0.5px);
 }
 
 .knowledge {
@@ -60,6 +66,7 @@ hr.workseparator {
 
 .skillboxPL {
   padding-left: 50px;
+  padding-bottom: 5px;
 }
 
 /* Navbar styles */
@@ -81,14 +88,17 @@ hr.workseparator {
 .intro {
   display: flex;
   flex-direction: column;
+  height: 100%;
   background-image: url("../img/Top_circles_mobile.png");
-  background-size: 600px 580px;
+  background-size: cover;
   background-repeat: no-repeat;
+  align-items: center;
 }
 
 .about-me {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* Styles of the Figma templates */
@@ -115,12 +125,17 @@ hr.workseparator {
 }
 
 .contentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   color: #b3bac5;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
+  min-width: 327px;
+  max-width: 426px;
 }
 
 .nav-links,
@@ -144,6 +159,7 @@ hr.workseparator {
   font-size: 2rem;
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
 }
 
 .social-links > a,
@@ -200,7 +216,6 @@ i {
 .section-work {
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -223,6 +238,10 @@ i {
   justify-items: center;
 }
 
+.workCardTitle-container {
+  margin-bottom: calc(1% - 0px / 2 + 0.5px);
+}
+
 .workCard-container {
   margin-bottom: calc(5% - 0px / 2 + 0.5px);
 }
@@ -238,13 +257,13 @@ i {
   font-weight: 500;
   font-size: 40px;
   line-height: 52px;
-  margin-bottom: 24px;
   color: #9490ff;
 }
 
 .image-work {
   display: flex;
   align-items: center;
+  margin-left: 24px;
 }
 
 .title-work {
@@ -258,6 +277,7 @@ i {
   display: flex;
   align-items: center;
   color: #fff;
+  margin-left: 24px;
 }
 
 .content-work {
@@ -321,7 +341,6 @@ i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
   background: #7d73fc;
   box-shadow: 1px 8px 16px rgba(125, 115, 252, 0.48);
 }
@@ -330,7 +349,6 @@ i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
   background: #5e42d7;
 }
 
@@ -462,6 +480,8 @@ textarea {
 }
 
 .formEmail {
+  display: flex;
+  justify-content: center;
   order: 4;
   flex-grow: 0;
   font-family: 'Roboto', sans-serif;
@@ -472,7 +492,7 @@ textarea {
   margin-top: 0;
   padding-top: 0;
   height: 29px;
-  width: 221px;
+  width: 100%;
 }
 
 .formEmailLink {
@@ -498,6 +518,13 @@ a.formEmailLink:hover {
   text-decoration: none;
 }
 
+.footer-media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 #msg {
   overflow: auto;
   resize: none;
@@ -513,5 +540,129 @@ a.formEmailLink:hover {
 @media (min-width: 767px) {
   .shown-mobile {
     display: none;
+  }
+
+  footer {
+    margin-top: 66px;
+  }
+
+  h3 {
+    margin-top: 0 !important;
+  }
+
+  hr.workseparator {
+    width: 1156px;
+    margin-top: calc(1% - 0px / 2 + 0.5px);
+    margin-bottom: calc(1% - 0px / 2 + 0.5px);
+  }
+
+  ul.formSocialNetwork {
+    width: 50%;
+    justify-content: right;
+  }
+
+  div.formEmail {
+    width: 50%;
+    justify-content: left;
+  }
+
+  ul.formList :nth-child(3) {
+    margin-bottom: 62px;
+  }
+
+  .intro {
+    background-image: url("../img/two_circles_header.png");
+    background-size: cover;
+  }
+
+  .titleHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .subtitleHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .skillboxPL {
+    padding-left: 50px;
+    padding-bottom: 14px;
+  }
+
+  .skillbox {
+    width: 33.33%;
+  }
+
+  .inline-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .headWorkTitlecont {
+    font-size: medium;
+  }
+
+  .workCardTitle-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: calc(1% - 0px / 2 + 0.5px);
+  }
+
+  .header-work {
+    width: 1156px;
+  }
+
+  .workCard-container {
+    display: inline-flex;
+    width: 1156px;
+  }
+
+  .normalCard-flow {
+    flex-direction: row;
+  }
+
+  .reverseCard-flow {
+    flex-direction: row-reverse;
+  }
+
+  .aboutme-skills {
+    width: 447px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .formHeader {
+    width: 684px;
+  }
+
+  .formContent {
+    width: 684px;
+  }
+
+  .formContentList {
+    width: 684px;
+  }
+
+  .formList {
+    width: 100%;
+  }
+
+  .formButton {
+    width: 128px;
+    height: 48px;
+  }
+
+  .formEmail {
+    height: 40px;
   }
 }

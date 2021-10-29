@@ -633,6 +633,11 @@ a.formEmailLink:hover {
     flex-direction: column;
     justify-content: center;
     margin-top: 100px;
+    transition: transform 2s ease;
+  }
+
+  .titleHeader:hover {
+    transform: rotate(360deg);
   }
 
   .subtitleHeader {

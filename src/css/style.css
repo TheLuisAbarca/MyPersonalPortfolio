@@ -765,4 +765,12 @@ a.formEmailLink:hover {
     align-items: center;
     background: #5e42d7;
   }
+
+  .thumbnail:hover {
+    transform: scale(105%) ;
+  }
+
+  .thumbnail {
+    transition: all .2s ease-in-out;
+  }
 }

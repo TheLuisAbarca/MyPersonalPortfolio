@@ -692,4 +692,37 @@ ul.formList > li.formlistSpaceEvenly {
   .formEmail {
     height: 40px;
   }
+
+  .contactButton-work {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 76px;
+    padding-right: 76px;
+    position: static;
+    height: 48px;
+    top: 421px;
+    background: #7d73fc;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 24px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .contactButton-work:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #7d73fc;
+    box-shadow: 1px 8px 16px rgba(125, 115, 252, 0.48);
+  }
+  
+  .contactButton-work:focus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #5e42d7;
+  }
 }

@@ -531,6 +531,14 @@ a.formEmailLink:hover {
   align-items: center;
 }
 
+.inline-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 106px;
+}
+
 #msg {
   overflow: auto;
   resize: none;
@@ -540,6 +548,11 @@ a.formEmailLink:hover {
 @media (max-width: 992px) {
   .hidden-mobile {
     display: none;
+  }
+
+  ul.social-links {
+    margin-top: 66px;
+    margin-bottom: 0;
   }
 }
 
@@ -606,6 +619,10 @@ ul.formList > li.formlistSpaceEvenly {
     text-decoration: none;
   }
 
+  ul.social-links {
+    margin-bottom: 0;
+  }
+
   .nav-wordsColor {
     padding-left: 24px;
   }
@@ -643,7 +660,7 @@ ul.formList > li.formlistSpaceEvenly {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 106px;
   }
 
   .headWorkTitlecont {

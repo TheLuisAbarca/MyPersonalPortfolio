@@ -771,11 +771,11 @@ a.formEmailLink:hover {
     background: #5e42d7;
   }
 
-  .thumbnail:hover {
-    transform: scale(105%) ;
+  .thumbnail {
+    transition: all 0.2s ease-in-out;
   }
 
-  .thumbnail {
-    transition: all .2s ease-in-out;
+  .thumbnail:hover {
+    transform: scale(1.05);
   }
 }

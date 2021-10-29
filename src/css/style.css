@@ -9,6 +9,11 @@ footer {
   margin-top: 71px;
 }
 
+button.projectButton-work {
+  margin-left: 24px;
+}
+
+
 #firstBackground {
   background-image: url("../img/two_circles_header.png");
   background-repeat: no-repeat;
@@ -298,7 +303,8 @@ i {
 
 .langFrame-work {
   display: flex;
-  justify-content: space-around;
+  padding-left: 0;
+  justify-content: space-evenly;
 }
 
 .lang-box {

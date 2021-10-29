@@ -610,7 +610,7 @@ a.formEmailLink:hover {
   a.nav-wordsColor:link {
     text-decoration: none;
   }
-  
+
   a.nav-wordsColor:hover {
     text-decoration: none;
   }
@@ -673,7 +673,7 @@ a.formEmailLink:hover {
 
   .header-work {
     width: 1156px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -705,7 +705,7 @@ a.formEmailLink:hover {
 
   .formHeader {
     width: 684px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -750,7 +750,7 @@ a.formEmailLink:hover {
     border: 0;
     cursor: pointer;
   }
-  
+
   .contactButton-work:hover {
     display: flex;
     flex-direction: row;
@@ -758,7 +758,7 @@ a.formEmailLink:hover {
     background: #7d73fc;
     box-shadow: 1px 8px 16px rgba(125, 115, 252, 0.48);
   }
-  
+
   .contactButton-work:focus {
     display: flex;
     flex-direction: row;

@@ -13,7 +13,6 @@ button.projectButton-work {
   margin-left: 24px;
 }
 
-
 #firstBackground {
   background-image: url("../img/two_circles_header.png");
   background-repeat: no-repeat;
@@ -290,6 +289,7 @@ i {
   width: 327px;
   height: 204px;
   top: 129px;
+  font-family: 'Inter', sans-serif !important;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -536,7 +536,7 @@ a.formEmailLink:hover {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-top: 106px;
+  margin-top: 58px;
 }
 
 #msg {
@@ -660,7 +660,7 @@ ul.formList > li.formlistSpaceEvenly {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: 106px;
+    margin-top: 96px;
   }
 
   .headWorkTitlecont {
@@ -695,6 +695,10 @@ ul.formList > li.formlistSpaceEvenly {
 
   .reverseCard-flow {
     flex-direction: row-reverse;
+  }
+
+  .content-work {
+    font-family: 'Roboto', sans-serif !important;
   }
 
   .aboutme-skills {

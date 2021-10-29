@@ -270,8 +270,10 @@
                 </p>
                 <form action="https://formspree.io/f/mleakveq" method="post" class="formContentList">
                     <ul class="formList">
-                        <li>
+                        <li class="formListSpaceEvenly">
                           <input class="styleform" type="text" id="name" name="user_name" required maxlength="30" placeholder="Name">
+                          <div class="space hidden-mobile"></div>
+                          <input class="styleform hidden-mobile" type="text" id="lastname" name="user_lastname" required maxlength="30" placeholder="Last Name">
                         </li>
                         <li>
                           <input class="styleform" type="email" id="mail" name="user_email" required placeholder="Email">

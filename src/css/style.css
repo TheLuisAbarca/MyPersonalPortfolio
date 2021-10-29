@@ -566,8 +566,30 @@ a.formEmailLink:hover {
     justify-content: left;
   }
 
+  ul.formList > li {
+    justify-content: space-around;
+  }
+/*
+ul.formList > li.formlistSpaceEvenly {
+  align-items: stretch;
+}
+*/
   ul.formList :nth-child(3) {
     margin-bottom: 62px;
+  }
+
+  ul.formList > li > input#name {
+    width: 48%;
+  }
+
+  ul.formList > li > input#lastname {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  div.space {
+    width: 4%;
+    height: 48px;
   }
 
   .intro {

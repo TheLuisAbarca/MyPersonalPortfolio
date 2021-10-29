@@ -633,6 +633,11 @@ a.formEmailLink:hover {
     flex-direction: column;
     justify-content: center;
     margin-top: 100px;
+    transition: transform 2s ease;
+  }
+
+  .titleHeader:hover {
+    transform: rotate(360deg);
   }
 
   .subtitleHeader {
@@ -764,5 +769,13 @@ a.formEmailLink:hover {
     flex-direction: row;
     align-items: center;
     background: #5e42d7;
+  }
+
+  .thumbnail {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .thumbnail:hover {
+    transform: scale(1.05);
   }
 }

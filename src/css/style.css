@@ -592,6 +592,18 @@ ul.formList > li.formlistSpaceEvenly {
     height: 48px;
   }
 
+  a.nav-wordsColor:link {
+    text-decoration: none;
+  }
+  
+  a.nav-wordsColor:hover {
+    text-decoration: none;
+  }
+
+  .nav-wordsColor {
+    padding-left: 24px;
+  }
+
   .intro {
     background-image: url("../img/two_circles_header.png");
     background-size: cover;

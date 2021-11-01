@@ -11,6 +11,9 @@ In this project I show my skills and my other projects and is a way to centraliz
 - HTML5
 - CSS3
 
+## Live Demo
+[Live Demo Link](https://theluisabarca.github.io/MyPersonalPortfolio)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:

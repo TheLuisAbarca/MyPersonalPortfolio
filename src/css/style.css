@@ -36,6 +36,42 @@ button.projectButton-work {
   border: 0;
 }
 
+.mobMenu {
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  padding-right: 25px;
+}
+
+.mobMenu > ul {
+  list-style-type: none;
+}
+
+.mobMenu > ul > li {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobMenu > ul > li > a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #edecff;
+}
+
+.mobMenu > a {
+  align-self: flex-end;
+}
+
+.closeIcon {
+  margin-top: 25px;
+}
+
+.close-button-hidden {
+  display: none !important;
+}
+
 .justifyFlexcomponentsXY {
   justify-content: center;
   align-items: center;

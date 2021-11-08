@@ -25,11 +25,23 @@
         <title>Anghelo's Portfolio</title>
     </head>
     <body>
+        <div class="mobMenu">
+            <a><i class="fas fa-times fa-inverse closeIcon"></i></a>
+            <ul>
+                <li>
+                    <a href="">Portfolio</a>
+                    <img src="src/img/Union.png" alt="arrow right">
+                </li>
+                <li><a href="">About</a><img src="src/img/Union.png" alt="arrow right"></li>
+                <li><a href="">Contact</a><img src="src/img/Union.png" alt="arrow right"></li>
+            </ul>
+        </div>
         <header>
             <nav class="nav-container">
                 <a>
                     <h4 class="nav-wordsColor nav-name">Luis Abarca</h4>
                 </a>
+
                 <div class="hidden-mobile">
                     <a class="nav-wordsColor" href="#myPortfolio">Portfolio</a>
                     <a class="nav-wordsColor" href="#aboutMe">About</a>
@@ -37,8 +49,11 @@
                     <i class="far fa-envelope fa-inverse"></i>
                 </div>
                 <div class="shown-mobile">
-                    <button class="ham-button" type="button">
+                    <button id="barsBtn" class="ham-button" type="button">
                         <i class="fas fa-bars justifyFlexcomponentsXY"></i>
+                    </button>
+                    <button id="closeBtn" class="ham-button close-button-hidden" type="button">
+                        <i class="fas fa-times justifyFlexcomponentsXY"></i>
                     </button>
                     <nav class="navbar">
                         <a href="#myPortfolio"></a>
@@ -314,5 +329,6 @@
                 </div>
             </footer>    
         </main>
+        <script src="src/js/index.js"></script>
     </body>
 </html>

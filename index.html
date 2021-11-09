@@ -1,318 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS Stylesheet-->
-        <link rel="stylesheet" type="text/css" href="src/css/style.css">
-        <!--Google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
-        <!-- Font Awesome icons -->
-        <script src="https://kit.fontawesome.com/0e63fe95a0.js" crossorigin="anonymous"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPPWMEL83D"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-WPPWMEL83D');
-        </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/0e63fe95a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WPPWMEL83D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        <title>Anghelo's Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <nav class="nav-container">
-                <a>
-                    <h4 class="nav-wordsColor nav-name">Luis Abarca</h4>
-                </a>
-                <div class="hidden-mobile">
-                    <a class="nav-wordsColor" href="#myPortfolio">Portfolio</a>
-                    <a class="nav-wordsColor" href="#aboutMe">About</a>
-                    <a class="nav-wordsColor" href="#contactMe">Contact</a>
-                    <i class="far fa-envelope fa-inverse"></i>
-                </div>
-                <div class="shown-mobile">
-                    <button class="ham-button" type="button">
-                        <i class="fas fa-bars justifyFlexcomponentsXY"></i>
-                    </button>
-                    <nav class="navbar">
-                        <a href="#myPortfolio"></a>
-                        <a href="#aboutMe"></a>
-                        <a href="#contactMe"></a>
-                    </nav>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="intro" id="aboutMe">
-                <h1 class="titleHeader">Luis Abarca</h1>
-                <h3 class="subtitleHeader">Software Developer</h3>
-                <p class="contentHeader"> I can help you build a product , 
-                    feature or website. Look through some of my work and experience! 
-                    If you like what you see and have a project you need coded, 
-                    don’t hesitate to contact me.
-                </p>
-                <hr class="solid">
-                <div class="knowledge">
-                    <div class="skillbox">
-                        <h5 class="text-purple skillboxPL">Languages</h5>
-                        <div class="nav-links skillboxPL">Javascript</div>
-                        <div class="nav-links skillboxPL">Ruby</div>
-                        <div class="nav-links skillboxPL">Html</div>
-                        <div class="nav-links skillboxPL">Css</div>  
-                    </div>
-                    <div class="skillbox">
-                        <h5 class="text-purple skillboxPL">Frameworks</h5>
-                        <div class="nav-links skillboxPL">Bootstrap</div>
-                        <div class="nav-links skillboxPL">Ruby on Rails</div>
-                        <div class="nav-links skillboxPL">RSPec</div>
-                        <div class="nav-links skillboxPL">CapyBara</div>
-                        <div class="nav-links skillboxPL">Selenium</div>
-                    </div>
-                    <div class="skillbox">
-                        <h5 class="text-purple skillboxPL">Skills</h5>
-                        <div class="nav-links skillboxPL">Codekit</div>
-                        <div class="nav-links skillboxPL">Github</div>
-                        <div class="nav-links skillboxPL">Codepen</div>
-                        <div class="nav-links skillboxPL">Gitlab</div>
-                        <div class="nav-links skillboxPL">Terminal</div>
-                    </div>
-                </div>
-                <br>
-                <hr class="solid">
-                <br>
-                <ul class="shown-mobile social-links">
-                    <li><a href="https://github.com/TheLuisAbarca"><i class="fab fa-github fa-xs"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/techadvisor-luis-abarca/"><i class="fab fa-linkedin-in fa-xs"></i></a></li>
-                    <li><a href="#"><i class="fab fa-angellist fa-xs"></i></a></li>
-                    <li><a href="https://twitter.com/TheLuisAbarca"><i class="fab fa-twitter fa-xs"></i></a></li>
-                    <li><a href="#"><i class="fab fa-medium fa-xs"></i></a></li>
-                </ul>
-                <div class="hidden-mobile inline-media">
-                    <a href="#work-container" class="headWorkTitlecont">
-                        Work
-                        <i class="fas fa-arrow-down"></i>
-                    </a>
-                    <ul class="social-links">
-                        <li><a href="https://github.com/TheLuisAbarca"><i class="fab fa-github fa-xs"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/techadvisor-luis-abarca/"><i class="fab fa-linkedin-in fa-xs"></i></a></li>
-                        <li><a href="#"><i class="fab fa-angellist fa-xs"></i></a></li>
-                        <li><a href="https://twitter.com/TheLuisAbarca"><i class="fab fa-twitter fa-xs"></i></a></li>
-                        <li><a href="#"><i class="fab fa-medium fa-xs"></i></a></li>
-                    </ul>
-                    <a href="#work-container" class="headWorkTitlecont">
-                        <i class="fas fa-arrow-down"></i>
-                        Work
-                    </a>
-                </div>
-            </section>
-            <section class="section-work" id="myPortfolio">
-                <div class="generic-grid-container shown-mobile">
-                    <a href="#work-container" class="headWorkTitlecont">
-                        <i class="fas fa-arrow-down"></i>
-                        Work
-                    </a>
-                </div>
-                <div class="work-container" id="work-container">
-                    <div class="workCardTitle-container">
-                        <div class="header-work">MY RECENT WORK</div>
-                        <hr class="workseparator">
-                    </div>
-                    <div class="workCard-container normalCard-flow">
-                        <img class="image-work hidden-mobile thumbnail" src="src/img/img_Placeholder-Desktop.png" alt="Image Placeholder">
-                        <img class="image-work shown-mobile elipse19" src="src/img/img_Placeholder.png" alt="Image Placeholder">
-                        <article>
-                            <div class="title-work">Multi-Post Stories</div>
-                            <div class="content-work">
-                                A daily selection of privately 
-                                personalized reads; no accounts 
-                                or sign-ups required. has been the 
-                                industry's standard dummy text 
-                                ever since the 1500s, when an 
-                                unknown printer took a standard 
-                                dummy text.
-                            </div>
-                            <ul class="langFrame-work">
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">css</h4>
-                                </li>
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">html</h4>
-                                </li>
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">bootstrap</h4>
-                                </li>
-                                <li class="lang-box">
-                                    <h4 class="language-text">Ruby</h4>
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <button class="projectButton-work pButtonW-text">
-                                See Project
-                            </button>
-                        </article>
-                    </div>
-                    <div class="workCard-container reverseCard-flow">
-                        <img class="image-work hidden-mobile thumbnail" src="src/img/img_Placeholder-Desktop.png" alt="Image Placeholder">
-                        <img class="image-work shown-mobile elipse19" src="src/img/img_Placeholder.png" alt="Image Placeholder">
-                        <article>
-                            <div class="title-work">Multi-Post Stories</div>
-                            <div class="content-work">
-                                A daily selection of privately 
-                                personalized reads; no accounts 
-                                or sign-ups required. has been the 
-                                industry's standard dummy text 
-                                ever since the 1500s, when an 
-                                unknown printer took a standard 
-                                dummy text.
-                            </div>
-                            <ul class="langFrame-work">
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">css</h4>
-                                </li>
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">html</h4>
-                                </li>
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">bootstrap</h4>
-                                </li>
-                                <li class="lang-box">
-                                    <h4 class="language-text">Ruby</h4>
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <button class="projectButton-work pButtonW-text">
-                                See Project
-                            </button>
-                        </article>
-                    </div>
-                    <div class="workCard-container normalCard-flow">
-                        <img class="image-work hidden-mobile thumbnail" src="src/img/img_Placeholder-Desktop.png" alt="Image Placeholder">
-                        <img class="image-work shown-mobile elipse19" src="src/img/img_Placeholder.png" alt="Image Placeholder">
-                        <article>
-                            <div class="title-work">Multi-Post Stories</div>
-                            <div class="content-work">
-                                A daily selection of privately 
-                                personalized reads; no accounts 
-                                or sign-ups required. has been the 
-                                industry's standard dummy text 
-                                ever since the 1500s, when an 
-                                unknown printer took a standard 
-                                dummy text.
-                            </div>
-                            <ul class="langFrame-work">
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">css</h4>
-                                </li>
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">html</h4>
-                                </li>
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">bootstrap</h4>
-                                </li>
-                                <li class="lang-box">
-                                    <h4 class="language-text">Ruby</h4>
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <button class="projectButton-work pButtonW-text">
-                                See Project
-                            </button>
-                        </article>
-                    </div>
-                    <div class="workCard-container reverseCard-flow">
-                        <img class="image-work hidden-mobile thumbnail" src="src/img/img_Placeholder-Desktop.png" alt="Image Placeholder">
-                        <img class="image-work shown-mobile elipse19" src="src/img/img_Placeholder.png" alt="Image Placeholder">
-                        <article>
-                            <div class="title-work">Multi-Post Stories</div>
-                            <div class="content-work">
-                                A daily selection of privately 
-                                personalized reads; no accounts 
-                                or sign-ups required. has been the 
-                                industry's standard dummy text 
-                                ever since the 1500s, when an 
-                                unknown printer took a standard 
-                                dummy text.
-                            </div>
-                            <ul class="langFrame-work">
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">css</h4>
-                                </li>
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">html</h4>
-                                </li>
-                                <li class="lang-box separator-lang">
-                                    <h4 class="language-text">bootstrap</h4>
-                                </li>
-                                <li class="lang-box">
-                                    <h4 class="language-text">Ruby</h4>
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <button class="projectButton-work pButtonW-text">
-                                See Project
-                            </button>
-                        </article>
-                    </div>                  
-                </div>
-            </section>   
-            <section class="contactMeSection" id="contactMe">
-                <h2 class="formHeader shown-mobile">
-                    CONTACT ME
-                </h2>
-                <h2 class="formHeader hidden-mobile">
-                    Let's chat!
-                </h2>
-                <p class="formContent">
-                    If you have an application you are interested in developing, 
-                    a feature that you need built or a project that needs coding. 
-                    I’d love to help with it.
-                </p>
-                <form action="https://formspree.io/f/mleakveq" method="post" class="formContentList">
-                    <ul class="formList">
-                        <li class="formListSpaceEvenly">
-                          <input class="styleform" type="text" id="name" name="user_name" required maxlength="30" placeholder="Name">
-                          <div class="space hidden-mobile"></div>
-                          <input class="styleform hidden-mobile" type="text" id="lastname" name="user_lastname" required maxlength="30" placeholder="Last Name">
-                        </li>
-                        <li>
-                          <input class="styleform" type="email" id="mail" name="user_email" required placeholder="Email">
-                        </li>
-                        <li>
-                          <textarea class="styleform height_textarea" id="msg" name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
-                        </li>
-                        <li class="formButton">
-                            <button class="projectButton-work pButtonW-text shown-mobile" type="submit">Submit</button>
-                            <button class="contactButton-work pButtonW-text hidden-mobile" type="submit">Send</button>
-                        </li>
-                    </ul>
-                </form>
-            </section>
-            <footer>
-                <div class="footer-media">
-                    <ul class="social-links formSocialNetwork">
-                        <li><a href="https://github.com/TheLuisAbarca"><i class="fab fa-github fa-xs"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/techadvisor-luis-abarca/"><i class="fab fa-linkedin-in fa-xs"></i></a></li>
-                        <li><a href="#"><i class="fab fa-angellist fa-xs"></i></a></li>
-                        <li><a href="https://twitter.com/TheLuisAbarca"><i class="fab fa-twitter fa-xs"></i></a></li>
-                        <li><a href="#"><i class="fab fa-medium fa-xs"></i></a></li>
-                    </ul>
-                    <div class="formEmail">
-                        <a href="mailto:arclaav.adm@gmail.com" class="formEmailLink">
-                            arclaav.adm@gmail.com
-                        </a>
-                    </div>
-                </div>
-            </footer>    
-        </main>
-    </body>
+      gtag("config", "G-WPPWMEL83D");
+    </script>
+
+    <title>Anghelo's Portfolio</title>
+  </head>
+  <body>
+    <div class="mobMenu">
+      <a><i class="fas fa-times fa-2x fa-inverse closeIcon"></i></a>
+      <ul>
+        <li>
+          <a href="#myPortfolio">Portfolio</a>
+          <img src="src/img/Union.png" alt="arrow right" />
+        </li>
+        <li>
+          <a href="#aboutMe">About</a
+          ><img src="src/img/Union.png" alt="arrow right" />
+        </li>
+        <li>
+          <a href="#contactMe">Contact</a
+          ><img src="src/img/Union.png" alt="arrow right" />
+        </li>
+      </ul>
+    </div>
+    <header>
+      <nav class="nav-container">
+        <a>
+          <h4 class="nav-wordsColor nav-name">Luis Abarca</h4>
+        </a>
+
+        <div class="hidden-mobile">
+          <a class="nav-wordsColor" href="#myPortfolio">Portfolio</a>
+          <a class="nav-wordsColor" href="#aboutMe">About</a>
+          <a class="nav-wordsColor" href="#contactMe">Contact</a>
+          <i class="far fa-envelope fa-inverse"></i>
+        </div>
+        <div class="shown-mobile">
+          <button id="barsBtn" class="ham-button" type="button">
+            <i class="fas fa-bars justifyFlexcomponentsXY"></i>
+          </button>
+          <button
+            id="closeBtn"
+            class="ham-button close-button-hidden"
+            type="button"
+          >
+            <i class="fas fa-times justifyFlexcomponentsXY"></i>
+          </button>
+          <nav class="navbar">
+            <a href="#myPortfolio"></a>
+            <a href="#aboutMe"></a>
+            <a href="#contactMe"></a>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="intro" id="aboutMe">
+        <h1 class="titleHeader">Luis Abarca</h1>
+        <h3 class="subtitleHeader">Software Developer</h3>
+        <p class="contentHeader">
+          I can help you build a product , feature or website. Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hesitate to contact me.
+        </p>
+        <hr class="solid" />
+        <div class="knowledge">
+          <div class="skillbox">
+            <h5 class="text-purple skillboxPL">Languages</h5>
+            <div class="nav-links skillboxPL">Javascript</div>
+            <div class="nav-links skillboxPL">Ruby</div>
+            <div class="nav-links skillboxPL">Html</div>
+            <div class="nav-links skillboxPL">Css</div>
+          </div>
+          <div class="skillbox">
+            <h5 class="text-purple skillboxPL">Frameworks</h5>
+            <div class="nav-links skillboxPL">Bootstrap</div>
+            <div class="nav-links skillboxPL">Ruby on Rails</div>
+            <div class="nav-links skillboxPL">RSPec</div>
+            <div class="nav-links skillboxPL">CapyBara</div>
+            <div class="nav-links skillboxPL">Selenium</div>
+          </div>
+          <div class="skillbox">
+            <h5 class="text-purple skillboxPL">Skills</h5>
+            <div class="nav-links skillboxPL">Codekit</div>
+            <div class="nav-links skillboxPL">Github</div>
+            <div class="nav-links skillboxPL">Codepen</div>
+            <div class="nav-links skillboxPL">Gitlab</div>
+            <div class="nav-links skillboxPL">Terminal</div>
+          </div>
+        </div>
+        <br />
+        <hr class="solid" />
+        <br />
+        <ul class="shown-mobile social-links">
+          <li>
+            <a href="https://github.com/TheLuisAbarca"
+              ><i class="fab fa-github fa-xs"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/techadvisor-luis-abarca/"
+              ><i class="fab fa-linkedin-in fa-xs"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-angellist fa-xs"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/TheLuisAbarca"
+              ><i class="fab fa-twitter fa-xs"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-medium fa-xs"></i></a>
+          </li>
+        </ul>
+        <div class="hidden-mobile inline-media">
+          <a href="#work-container" class="headWorkTitlecont">
+            Work
+            <i class="fas fa-arrow-down"></i>
+          </a>
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/TheLuisAbarca"
+                ><i class="fab fa-github fa-xs"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/techadvisor-luis-abarca/"
+                ><i class="fab fa-linkedin-in fa-xs"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-angellist fa-xs"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/TheLuisAbarca"
+                ><i class="fab fa-twitter fa-xs"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-medium fa-xs"></i></a>
+            </li>
+          </ul>
+          <a href="#work-container" class="headWorkTitlecont">
+            <i class="fas fa-arrow-down"></i>
+            Work
+          </a>
+        </div>
+      </section>
+      <section class="section-work" id="myPortfolio">
+        <div class="generic-grid-container shown-mobile">
+          <a href="#work-container" class="headWorkTitlecont">
+            <i class="fas fa-arrow-down"></i>
+            Work
+          </a>
+        </div>
+        <div class="work-container" id="work-container">
+          <div class="workCardTitle-container">
+            <div class="header-work">MY RECENT WORK</div>
+            <hr class="workseparator" />
+          </div>
+          <div class="workCard-container normalCard-flow">
+            <img
+              class="image-work hidden-mobile thumbnail"
+              src="src/img/img_Placeholder-Desktop.png"
+              alt="Image Placeholder"
+            />
+            <img
+              class="image-work shown-mobile elipse19"
+              src="src/img/img_Placeholder.png"
+              alt="Image Placeholder"
+            />
+            <article>
+              <div class="title-work">Multi-Post Stories</div>
+              <div class="content-work">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </div>
+              <ul class="langFrame-work">
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">css</h4>
+                </li>
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">html</h4>
+                </li>
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">bootstrap</h4>
+                </li>
+                <li class="lang-box">
+                  <h4 class="language-text">Ruby</h4>
+                </li>
+              </ul>
+              <br />
+              <br />
+              <button class="projectButton-work pButtonW-text">
+                See Project
+              </button>
+            </article>
+          </div>
+          <div class="workCard-container reverseCard-flow">
+            <img
+              class="image-work hidden-mobile thumbnail"
+              src="src/img/img_Placeholder-Desktop.png"
+              alt="Image Placeholder"
+            />
+            <img
+              class="image-work shown-mobile elipse19"
+              src="src/img/img_Placeholder.png"
+              alt="Image Placeholder"
+            />
+            <article>
+              <div class="title-work">Multi-Post Stories</div>
+              <div class="content-work">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </div>
+              <ul class="langFrame-work">
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">css</h4>
+                </li>
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">html</h4>
+                </li>
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">bootstrap</h4>
+                </li>
+                <li class="lang-box">
+                  <h4 class="language-text">Ruby</h4>
+                </li>
+              </ul>
+              <br />
+              <br />
+              <button class="projectButton-work pButtonW-text">
+                See Project
+              </button>
+            </article>
+          </div>
+          <div class="workCard-container normalCard-flow">
+            <img
+              class="image-work hidden-mobile thumbnail"
+              src="src/img/img_Placeholder-Desktop.png"
+              alt="Image Placeholder"
+            />
+            <img
+              class="image-work shown-mobile elipse19"
+              src="src/img/img_Placeholder.png"
+              alt="Image Placeholder"
+            />
+            <article>
+              <div class="title-work">Multi-Post Stories</div>
+              <div class="content-work">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </div>
+              <ul class="langFrame-work">
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">css</h4>
+                </li>
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">html</h4>
+                </li>
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">bootstrap</h4>
+                </li>
+                <li class="lang-box">
+                  <h4 class="language-text">Ruby</h4>
+                </li>
+              </ul>
+              <br />
+              <br />
+              <button class="projectButton-work pButtonW-text">
+                See Project
+              </button>
+            </article>
+          </div>
+          <div class="workCard-container reverseCard-flow">
+            <img
+              class="image-work hidden-mobile thumbnail"
+              src="src/img/img_Placeholder-Desktop.png"
+              alt="Image Placeholder"
+            />
+            <img
+              class="image-work shown-mobile elipse19"
+              src="src/img/img_Placeholder.png"
+              alt="Image Placeholder"
+            />
+            <article>
+              <div class="title-work">Multi-Post Stories</div>
+              <div class="content-work">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </div>
+              <ul class="langFrame-work">
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">css</h4>
+                </li>
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">html</h4>
+                </li>
+                <li class="lang-box separator-lang">
+                  <h4 class="language-text">bootstrap</h4>
+                </li>
+                <li class="lang-box">
+                  <h4 class="language-text">Ruby</h4>
+                </li>
+              </ul>
+              <br />
+              <br />
+              <button class="projectButton-work pButtonW-text">
+                See Project
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="contactMeSection" id="contactMe">
+        <h2 class="formHeader shown-mobile">CONTACT ME</h2>
+        <h2 class="formHeader hidden-mobile">Let's chat!</h2>
+        <p class="formContent">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it.
+        </p>
+        <form
+          action="https://formspree.io/f/mleakveq"
+          method="post"
+          class="formContentList"
+        >
+          <ul class="formList">
+            <li class="formListSpaceEvenly">
+              <input
+                class="styleform"
+                type="text"
+                id="name"
+                name="user_name"
+                required
+                maxlength="30"
+                placeholder="Name"
+              />
+              <div class="space hidden-mobile"></div>
+              <input
+                class="styleform hidden-mobile"
+                type="text"
+                id="lastname"
+                name="user_lastname"
+                required
+                maxlength="30"
+                placeholder="Last Name"
+              />
+            </li>
+            <li>
+              <input
+                class="styleform"
+                type="email"
+                id="mail"
+                name="user_email"
+                required
+                placeholder="Email"
+              />
+            </li>
+            <li>
+              <textarea
+                class="styleform height_textarea"
+                id="msg"
+                name="user_message"
+                placeholder="Enter text here"
+                required
+                maxlength="500"
+              ></textarea>
+            </li>
+            <li class="formButton">
+              <button
+                class="projectButton-work pButtonW-text shown-mobile"
+                type="submit"
+              >
+                Submit
+              </button>
+              <button
+                class="contactButton-work pButtonW-text hidden-mobile"
+                type="submit"
+              >
+                Send
+              </button>
+            </li>
+          </ul>
+        </form>
+      </section>
+      <footer>
+        <div class="footer-media">
+          <ul class="social-links formSocialNetwork">
+            <li>
+              <a href="https://github.com/TheLuisAbarca"
+                ><i class="fab fa-github fa-xs"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/techadvisor-luis-abarca/"
+                ><i class="fab fa-linkedin-in fa-xs"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-angellist fa-xs"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/TheLuisAbarca"
+                ><i class="fab fa-twitter fa-xs"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-medium fa-xs"></i></a>
+            </li>
+          </ul>
+          <div class="formEmail">
+            <a href="mailto:arclaav.adm@gmail.com" class="formEmailLink">
+              arclaav.adm@gmail.com
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="src/js/index.js"></script>
+  </body>
 </html>

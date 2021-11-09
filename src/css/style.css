@@ -36,20 +36,31 @@ button.projectButton-work {
   border: 0;
 }
 
+.social-links > a,
+a:link,
+a:visited {
+  color: #abbfe2;
+}
+
 .mobMenu {
   height: 100vh;
   display: none;
   flex-direction: column;
-  padding-right: 25px;
 }
 
 .mobMenu > ul {
   list-style-type: none;
 }
 
+.mobMenu > a {
+  align-items: center;
+  align-self: flex-end;
+}
+
 .mobMenu > ul > li {
   display: flex;
   margin-top: 40px;
+  margin-right: 32px;
   align-items: center;
   justify-content: space-between;
 }
@@ -60,12 +71,9 @@ button.projectButton-work {
   color: #edecff;
 }
 
-.mobMenu > a {
-  align-self: flex-end;
-}
-
 .closeIcon {
-  margin-top: 25px;
+  margin-top: 4px;
+  margin-right: 16px;
 }
 
 .close-button-hidden {
@@ -200,12 +208,6 @@ hr.workseparator {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
-}
-
-.social-links > a,
-a:link,
-a:visited {
-  color: #abbfe2;
 }
 
 a.headWorkTitlecont:link {

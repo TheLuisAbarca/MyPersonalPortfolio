@@ -3,6 +3,8 @@ const mobMenu = document.getElementsByClassName('mobMenu');
 const closeIcon = document.getElementsByClassName('closeIcon');
 const listEl = document.querySelectorAll('.mobMenu > ul > li');
 const bodyel = document.querySelector('body');
+const iconModal = document.querySelector('.closeIconModal');
+const modalel = document.querySelector('.modal_window_container');
 
 btnBars.addEventListener('click', () => {
   mobMenu[0].style.display = 'flex';
@@ -19,6 +21,12 @@ listEl.forEach((el) => {
     mobMenu[0].style.display = 'none';
     bodyel.style.overflow = 'auto';
   });
+});
+
+iconModal.addEventListener('click', () => {
+  modalel.style.display = 'none';
+  bodyel.style.overflow = 'auto';
+  //modalel.classList.add('animationModal');
 });
 
 const content01 = {
@@ -87,10 +95,15 @@ function htmlWorks_Template(index){
     </ul> \
     <br /> \
     <br />  \
-    <button class="projectButton-work pButtonW-text" type="button">See Project</button> \
+    <button class="projectButton-work pButtonW-text modalButton" type="button">See Project</button> \
   </article>';  
 }
 
+/*function toogleModal() {
+  var toogleModal = document.getElementsByClassName('modal_window_container');
+  toogleModal.classList.toggle("show");
+}
+*/
 document.addEventListener("DOMContentLoaded", function() {
   allcontent.forEach((element,index) => {
     let currIndex = Number(index+1);
@@ -104,5 +117,25 @@ document.addEventListener("DOMContentLoaded", function() {
     newDiv.innerHTML = htmlWorks_Template(element);;
     dinContent.appendChild(newDiv);
     document.getElementById('work-container').appendChild(dinContent);
+  });
+
+  const open_modal = document.querySelectorAll('.modalButton');
+  
+  console.log(open_modal);
+  open_modal.forEach((btn, i) => {
+    console.log(btn);
+    btn.addEventListener('click', () => {
+      console.log(allcontent[i], i);
+      modalel.style.display = 'flex';
+      bodyel.style.overflow = 'hidden';
+      //modalel.classList.add('animationModal');
+      /*let modalContent = document.createDocumentFragment();
+      let newCont = document.createElement('div');
+      newCont.className = 'modal_window_container';
+      newCont.innerHTML = modal_window_template(projects[i]);
+      modalContent.appendChild(newCont);
+      document.getElementById('projects').appendChild(modalContent);
+      */
+    })
   });
 });

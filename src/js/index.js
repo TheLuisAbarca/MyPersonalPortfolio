@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   const open_modal = document.querySelectorAll('.modalButton');
-  
+
   console.log(open_modal);
   open_modal.forEach((btn, i) => {
     console.log(btn);

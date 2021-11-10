@@ -364,6 +364,17 @@ i {
   font-size: 12px;
 }
 
+.modal-text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 15px;
+  line-height: 20px;
+  overflow: clip;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
 .projectButton-work {
   display: flex;
   flex-direction: row;
@@ -617,6 +628,7 @@ a.formEmailLink:hover {
   /*padding: 50px 50px 50px 50px;*/
   border: solid 1px #fff;
   background: rgba(255, 255, 255, 0.1);
+  overflow: scroll;
 }
 
 .articlePost-container {
@@ -679,15 +691,17 @@ a.formEmailLink:hover {
   padding: 0px;
   padding-left: 0;
   justify-content: space-between;
-  width: 245px;
+  width: 55vw;
   order: 3;
+  list-style-type: none;
+  overflow: clip;
 }
 
-.separatorModal-lang {
+/* .separatorModal-lang {
   border-left: solid 2px #555;
   border-right: solid 2px #555;
 
-}
+} */
 
 .buttonContainer {
   display: flex;

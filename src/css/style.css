@@ -562,6 +562,16 @@ a.formEmailLink:hover {
   text-decoration: none;
 }
 
+.emailErr {
+  color: white;
+  display: block;
+  margin-bottom: -10px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
 .footer-media {
   display: flex;
   flex-flow: row wrap;

@@ -75,33 +75,34 @@ const content04 = {
 const allcontent = [content01, content02, content03, content04];
 
 function htmlWorks_Template(index){
-  return ' \
-  <img class="image-work hidden-mobile thumbnail" src="'+index.feature_imageD+'" alt="Image Placeholder"/> \
-  <img class="image-work shown-mobile elipse19" src="'+index.feature_imageM+'" alt="Image Placeholder"/> \
+  return ` \
+  <img class="image-work hidden-mobile thumbnail" src='${index.feature_imageD}' alt="Image Placeholder"/> \
+  <img class="image-work shown-mobile elipse19" src='${index.feature_imageM}' alt="Image Placeholder"/> \
   <article> \
-    <div class="title-work">'+index.name+'</div> \
-    <div class="content-work">'+index.description+'</div> \
+    <div class="title-work">${index.name}</div> \
+    <div class="content-work">${index.description}</div> \
     <ul class="langFrame-work"> \
       <li class="lang-box separator-lang"> \
-        <h4 class="language-text">'+index.technologies[0]+'</h4> \
+        <h4 class="language-text">${index.technologies[0]}</h4> \
       </li> \
       <li class="lang-box separator-lang"> \
-        <h4 class="language-text">'+index.technologies[1]+'</h4> \
+        <h4 class="language-text">${index.technologies[1]}</h4> \
       </li> \
       <li class="lang-box separator-lang"> \
-        <h4 class="language-text">'+index.technologies[2]+'</h4> \
+        <h4 class="language-text">${index.technologies[2]}</h4> \
       </li> \
       <li class="lang-box"> \
-        <h4 class="language-text">'+index.technologies[3]+'</h4> \
+        <h4 class="language-text">${index.technologies[3]}</h4> \
       </li> \
     </ul> \
     <br /> \
     <br />  \
     <button class="projectButton-work pButtonW-text modalButton" type="button">See Project</button> \
-  </article>';  
+  </article>`;  
 }
 
-function htmlModal_Template(index){
+
+/*function htmlModal_Template(index){
   return '\
   <article class="articlePost-container"> \
     <div class="title-Modalwork"> \
@@ -137,6 +138,44 @@ function htmlModal_Template(index){
       <button class="projectButton-work pButtonW-text">See Source<i class="fab fa-github"></i></button> \
     </div> \
   </article>';
+}*/
+
+function htmlModal_Template(index){
+  return `\
+  <article class="articlePost-container"> \
+    <div class="title-Modalwork"> \
+      <h4>${index.name}</h4> \
+      <a><i class="fas fa-times fa-inverse closeIconModal"></i></a> \
+    </div> \
+    <img class="image-Modalwork hidden-mobile thumbnail" src='${index.feature_imageWorkD}' alt="Image Placeholder"/> \
+    <img class="image-Modalwork shown-mobile" src='${index.feature_imageWorkM}' alt="Image Placeholder"/> \
+    <p class="content-Modalwork">${index.description}</p> \
+    <ul class="langFrame-Modalwork"> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+      <li class="lang-box"> \
+        <h4 class="language-text modal-text">${index.technologies[0]}</h4> \
+      </li> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+      <li class="lang-box"> \
+        <h4 class="language-text modal-text">${index.technologies[1]}</h4> \
+      </li> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+      <li class="lang-box"> \
+        <h4 class="language-text modal-text">${index.technologies[2]}</h4> \
+      </li> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+      <li class="lang-box"> \
+        <h4 class="language-text modal-text">${index.technologies[3]}</h4> \
+      </li> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+    </ul> \
+    <br /> \
+    <br /> \
+    <div class="buttonContainer"> \
+      <button class="projectButton-work pButtonW-text">See Live<i class="fas fa-arrow-right"></i></button> \
+      <button class="projectButton-work pButtonW-text">See Source<i class="fab fa-github"></i></button> \
+    </div> \
+  </article>`;
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -160,11 +199,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const open_modal = document.querySelectorAll('.modalButton');
 
-  console.log(open_modal);
   open_modal.forEach((btn, i) => {
-    //console.log(btn);
     btn.addEventListener('click', () => {
-      //console.log(allcontent[i], i);
       modalel.style.display = 'flex';
       modalel.style.position = 'fixed';
       bodyel.style.overflow = 'hidden';

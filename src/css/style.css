@@ -672,6 +672,7 @@ a.formEmailLink:hover {
 }
 
 .content-Modalwork {
+  display: flex;
   width: 279px;
   height: 289px;
   font-family: Roboto;
@@ -680,6 +681,7 @@ a.formEmailLink:hover {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  align-items: center;
   color: #fff;
   order: 2;
 }
@@ -696,12 +698,6 @@ a.formEmailLink:hover {
   list-style-type: none;
   overflow: clip;
 }
-
-/* .separatorModal-lang {
-  border-left: solid 2px #555;
-  border-right: solid 2px #555;
-
-} */
 
 .buttonContainer {
   display: flex;
@@ -964,15 +960,38 @@ a.formEmailLink:hover {
   }
 
   .title-Modalwork {
+    display: flex;
     justify-content: space-between;
     height: 48px;
-    width: 1156px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
   }
+
+  .title-Modalwork > h4 {
+    margin-left: 20px;
+  }
+  
+  .title-Modalwork > a {
+    height: 100%;
+    margin-right: 20px;
+    justify-self: center;
+    align-items: center;
+  }
+  
   .content-Modalwork {
     width: 684px;
-    height: 236px;
+    height: 200px;
+  }
+
+  ul.langFrame-Modalwork {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  p.content-Modalwork {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .buttonContainer {

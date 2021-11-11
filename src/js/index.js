@@ -3,7 +3,7 @@ const mobMenu = document.getElementsByClassName('mobMenu');
 const closeIcon = document.getElementsByClassName('closeIcon');
 const listEl = document.querySelectorAll('.mobMenu > ul > li');
 const bodyel = document.querySelector('body');
-const iconModal = document.querySelector('.closeIconModal');
+
 const modalel = document.querySelector('.modal_window_container');
 
 btnBars.addEventListener('click', () => {
@@ -23,17 +23,13 @@ listEl.forEach((el) => {
   });
 });
 
-iconModal.addEventListener('click', () => {
-  modalel.style.display = 'none';
-  bodyel.style.overflow = 'auto';
-  //modalel.classList.add('animationModal');
-});
-
 const content01 = {
   name: 'Multi-Post Stories',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   feature_imageM: 'src/img/img_Placeholder.png',
   feature_imageD: 'src/img/img_Placeholder-Desktop.png',
+  feature_imageWorkM: 'src/img/Snapshoot_Portfolio.png',
+  feature_imageWorkD: 'src/img/Snapshoot_PortfolioD.png',
   technologies: ['css','html','Bootstrap','Ruby'],
   linkModal: '',
   linkLive: '',
@@ -44,6 +40,8 @@ const content02 = {
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   feature_imageM: 'src/img/img_Placeholder.png',
   feature_imageD: 'src/img/img_Placeholder-Desktop.png',
+  feature_imageWorkM: 'src/img/Snapshoot_Portfolio.png',
+  feature_imageWorkD: 'src/img/Snapshoot_PortfolioD.png',
   technologies: ['css','html','Bootstrap','Ruby'],
   linkModal: '',
   linkLive: '',
@@ -54,6 +52,8 @@ const content03 = {
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   feature_imageM: 'src/img/img_Placeholder.png',
   feature_imageD: 'src/img/img_Placeholder-Desktop.png',
+  feature_imageWorkM: 'src/img/Snapshoot_Portfolio.png',
+  feature_imageWorkD: 'src/img/Snapshoot_PortfolioD.png',
   technologies: ['css','html','Bootstrap','Ruby'],
   linkModal: '',
   linkLive: '',
@@ -64,6 +64,8 @@ const content04 = {
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   feature_imageM: 'src/img/img_Placeholder.png',
   feature_imageD: 'src/img/img_Placeholder-Desktop.png',
+  feature_imageWorkM: 'src/img/Snapshoot_Portfolio.png',
+  feature_imageWorkD: 'src/img/Snapshoot_PortfolioD.png',
   technologies: ['css','html','Bootstrap','Ruby'],
   linkModal: '',
   linkLive: '',
@@ -99,12 +101,49 @@ function htmlWorks_Template(index){
   </article>';  
 }
 
-/*function toogleModal() {
-  var toogleModal = document.getElementsByClassName('modal_window_container');
-  toogleModal.classList.toggle("show");
+function htmlModal_Template(index){
+  return '\
+  <article class="articlePost-container"> \
+    <div class="title-Modalwork"> \
+      <h4>'+index.name+'</h4> \
+      <a><i class="fas fa-times fa-inverse closeIconModal"></i></a> \
+    </div> \
+    <img class="image-Modalwork hidden-mobile thumbnail" src="'+index.feature_imageWorkD+'" alt="Image Placeholder"/> \
+    <img class="image-Modalwork shown-mobile" src="'+index.feature_imageWorkM+'" alt="Image Placeholder"/> \
+    <p class="content-Modalwork">'+index.description+'</p> \
+    <ul class="langFrame-Modalwork"> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+      <li class="lang-box"> \
+        <h4 class="language-text modal-text">'+index.technologies[0]+'</h4> \
+      </li> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+      <li class="lang-box"> \
+        <h4 class="language-text modal-text">'+index.technologies[1]+'</h4> \
+      </li> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+      <li class="lang-box"> \
+        <h4 class="language-text modal-text">'+index.technologies[2]+'</h4> \
+      </li> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+      <li class="lang-box"> \
+        <h4 class="language-text modal-text">'+index.technologies[3]+'</h4> \
+      </li> \
+      <li><img src="src/img/divider.png" alt="divider"></li> \
+    </ul> \
+    <br /> \
+    <br /> \
+    <div class="buttonContainer"> \
+      <button class="projectButton-work pButtonW-text">See Live<i class="fas fa-arrow-right"></i></button> \
+      <button class="projectButton-work pButtonW-text">See Source<i class="fab fa-github"></i></button> \
+    </div> \
+  </article>';
 }
-*/
+
 document.addEventListener("DOMContentLoaded", function() {
+  
+  modalel.style.display = 'none';
+  modalel.style.position =  'unset';
+
   allcontent.forEach((element,index) => {
     let currIndex = Number(index+1);
     let dinContent = document.createDocumentFragment();
@@ -123,19 +162,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
   console.log(open_modal);
   open_modal.forEach((btn, i) => {
-    console.log(btn);
+    //console.log(btn);
     btn.addEventListener('click', () => {
-      console.log(allcontent[i], i);
+      //console.log(allcontent[i], i);
       modalel.style.display = 'flex';
+      modalel.style.position = 'fixed';
       bodyel.style.overflow = 'hidden';
-      //modalel.classList.add('animationModal');
-      /*let modalContent = document.createDocumentFragment();
+      modalel.classList.add('animationModal');
+      let modalContent = document.createDocumentFragment();
       let newCont = document.createElement('div');
-      newCont.className = 'modal_window_container';
-      newCont.innerHTML = modal_window_template(projects[i]);
+      newCont.className = 'square-container';
+      newCont.innerHTML = htmlModal_Template(allcontent[i]);
       modalContent.appendChild(newCont);
-      document.getElementById('projects').appendChild(modalContent);
-      */
+      document.querySelector('.modal_window_container').appendChild(modalContent);
+
+      const iconModal = document.querySelector('.closeIconModal');
+      iconModal.addEventListener('click', () => {
+        modalel.style.display = 'none';
+        bodyel.style.overflow = 'auto';
+        document.querySelector('.modal_window_container').removeChild(document.querySelector('.square-container'));
+      });
     })
   });
+
 });

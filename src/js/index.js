@@ -6,6 +6,11 @@ const bodyel = document.querySelector('body');
 const formEl = document.getElementById('contactForm');
 const emailMsg = formEl.querySelector('small');
 const emailForm = formEl.querySelector('input[type="email"]');
+const userName = formEl.querySelector('input[name="user_name"');
+const userLastName = formEl.querySelector('input[name="user_lastname"');
+const message = formEl.querySelector('textarea');
+
+const widths = [320, 768, 992, 1024, 1280, 1440, 1600, 1920];
 
 function hasUpperCase(str) {
   const regExp = /[A-Z]/;
@@ -13,7 +18,9 @@ function hasUpperCase(str) {
 }
 
 formEl.addEventListener('submit', (e) => {
+  console.log(e);
   if (hasUpperCase(emailForm.value)) {
+    console.log(hasUpperCase(emailForm.value));
     e.preventDefault();
     emailMsg.style.display = 'block';
     emailMsg.textContent = 'Email needs to be lowercase';
@@ -157,9 +164,44 @@ function htmlModalTemplate(index) {
   </article>`;
 }
 
+const person = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+if (window.innerWidth >= widths[2]) {
+  person.lastName = '';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   modalel.style.display = 'none';
   modalel.style.position = 'unset';
+
+  person.name = JSON.parse(localStorage.getItem('name'));
+  if (window.innerWidth >= widths[2]) {
+    person.lastName = JSON.parse(localStorage.getItem('lastName'));
+  }
+  person.email = JSON.parse(localStorage.getItem('email'));
+  person.message = JSON.parse(localStorage.getItem('message'));
+
+  Object.keys(person).forEach((key) => {
+    if (key === 'name' && person[key] !== '') {
+      userName.value = person[key];
+    }
+    if (window.innerWidth >= widths[2]) {
+      if (key === 'lastName' && person[key] !== '') {
+        userLastName.value = person[key];
+      }
+    }
+    if (key === 'email' && person[key] !== '') {
+      emailForm.value = person[key];
+    }
+    if (key === 'message' && person[key] !== '') {
+      message.value = person[key];
+    }
+  });
+
   allcontent.forEach((element, index) => {
     const currIndex = Number(index + 1);
     const dinContent = document.createDocumentFragment();
@@ -196,5 +238,28 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.modal_window_container').removeChild(document.querySelector('.square-container'));
       });
     });
+  });
+
+  // Saving User Data Into Local Storage
+  userName.addEventListener('input', () => {
+    person.name = userName.value;
+    localStorage.setItem('name', JSON.stringify(person.name));
+  });
+
+  emailForm.addEventListener('input', () => {
+    person.email = emailForm.value;
+    localStorage.setItem('email', JSON.stringify(person.email));
+  });
+
+  if (window.innerWidth >= widths[2]) {
+    userLastName.addEventListener('input', () => {
+      person.lastName = userLastName.value;
+      localStorage.setItem('lastName', JSON.stringify(person.lastName));
+    });
+  }
+
+  message.addEventListener('input', () => {
+    person.message = message.value;
+    localStorage.setItem('message', JSON.stringify(person.message));
   });
 });

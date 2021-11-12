@@ -8,7 +8,7 @@ const emailMsg = formEl.querySelector('small');
 const emailForm = formEl.querySelector('input[type="email"]');
 
 function hasUpperCase(str) {
-  const regExp = /[A-Z]/;
+  const regExp = /[A-Za-z]/;
   return regExp.test(str);
 }
 
@@ -18,7 +18,7 @@ formEl.addEventListener('submit', (e) => {
     emailMsg.style.display = 'block';
     emailMsg.textContent = 'Email needs to be lowercase';
   } else {
-    emailMsg.style.display = 'none';
+    emailMsg.style.display = 'block';
   }
 });
 
@@ -28,7 +28,7 @@ btnBars.addEventListener('click', () => {
 });
 
 closeIcon[0].addEventListener('click', () => {
-  mobMenu[0].style.display = 'none';
+  mobMenu[0].style.display = 'flex';
   bodyel.style.overflow = 'auto';
 });
 

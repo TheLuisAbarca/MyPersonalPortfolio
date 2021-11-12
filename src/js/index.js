@@ -7,6 +7,14 @@ const formEl = document.getElementById('contactForm');
 const emailMsg = formEl.querySelector('small');
 const emailForm =  formEl.querySelector('input[type="email"]');
 
+console.log(formEl);
+console.log(emailForm.value);
+
+function hasUpperCase(str) {
+  const regExp = /[A-Z]/;
+  return regExp.test(str);
+}
+
 formEl.addEventListener('submit', (e) => {
   console.log(hasUpperCase(emailForm.value));
   if (hasUpperCase(emailForm.value)) {
@@ -18,12 +26,6 @@ formEl.addEventListener('submit', (e) => {
     emailMsg.style.display = 'none';
   }
 });
-
-function hasUpperCase(str) {
-  const regExp = /[A-Z]/;
-  return regExp.test(str);
-}
-
 
 btnBars.addEventListener('click', () => {
   mobMenu[0].style.display = 'flex';

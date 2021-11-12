@@ -573,6 +573,28 @@ a.formEmailLink:hover {
   text-decoration: none;
 }
 
+.emailErr {
+  color: #191765;
+  margin-bottom: -10px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.sm-errMsg {
+  width: 420px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+ul > li.emailErr {
+  margin-bottom: 0;
+  margin-top: 24px;
+  justify-items: center;
+}
+
 .footer-media {
   display: flex;
   flex-flow: row wrap;

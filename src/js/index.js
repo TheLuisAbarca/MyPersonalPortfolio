@@ -49,16 +49,16 @@ listEl.forEach((el) => {
 });
 
 const content01 = {
-  name: 'Multi-Post Stories',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  feature_imageM: 'src/img/img_Placeholder.png',
-  feature_imageD: 'src/img/img_Placeholder-Desktop.png',
-  feature_imageWorkM: 'src/img/Snapshoot_Portfolio.png',
-  feature_imageWorkD: 'src/img/Snapshoot_PortfolioD.png',
-  technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
+  name: 'ToDo List Web App',
+  description: "'To-do list' is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.",
+  feature_imageM: 'src/img/ToDo/img_Placeholder.png',
+  feature_imageD: 'src/img/ToDo/img_Placeholder-Desktop.png',
+  feature_imageWorkM: 'src/img/ToDo/Snapshoot_Portfolio.png',
+  feature_imageWorkD: 'src/img/ToDo/Snapshoot_PortfolioD.png',
+  technologies: ['CSS', 'HTML', 'Bootstrap', 'JavaScript'],
   linkModal: '',
-  linkLive: '',
-  link2Source: '',
+  linkLive: 'https://theluisabarca.github.io/To-DO_List/dist/',
+  link2Source: 'https://github.com/TheLuisAbarca/To-DO_List',
 };
 const content02 = {
   name: 'Multi-Post Stories',
@@ -158,8 +158,10 @@ function htmlModalTemplate(index) {
     <br /> \
     <br /> \
     <div class="buttonContainer"> \
-      <button class="projectButton-work pButtonW-text">See Live<i class="fas fa-arrow-right"></i></button> \
-      <button class="projectButton-work pButtonW-text">See Source<i class="fab fa-github"></i></button> \
+      <button class="projectButton-work pButtonW-text"><a href="${index.linkLive}">See Live</a> \
+      <i class="fas fa-arrow-right"></i></button> \
+      <button class="projectButton-work pButtonW-text"><a href="${index.link2Source}">See Source</a> \
+      <i class="fab fa-github"></i></button> \
     </div> \
   </article>`;
 }

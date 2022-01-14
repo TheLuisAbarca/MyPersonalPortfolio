@@ -49,8 +49,8 @@ listEl.forEach((el) => {
 });
 
 const content01 = {
-  name: 'Multi-Post Stories',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  name: 'Pokemon Web App API',
+  description: 'A tool that involves the creation of a Webapp consuming an API and help Pokemon TC gamers to see the cards and the status of each one',
   feature_imageM: 'src/img/PokeWebAppJS/img_Placeholder.png',
   feature_imageD: 'src/img/PokeWebAppJS/img_Placeholder-Desktop.png',
   feature_imageWorkM: 'src/img/PokeWebAppJS/Snapshoot_Portfolio.png',

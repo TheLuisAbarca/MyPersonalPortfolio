@@ -49,6 +49,18 @@ listEl.forEach((el) => {
 });
 
 const content01 = {
+  name: 'Multi-Post Stories',
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  feature_imageM: 'src/img/PokeWebAppJS/img_Placeholder.png',
+  feature_imageD: 'src/img/PokeWebAppJS/img_Placeholder-Desktop.png',
+  feature_imageWorkM: 'src/img/PokeWebAppJS/Snapshoot_Portfolio.png',
+  feature_imageWorkD: 'src/img/PokeWebAppJS/Snapshoot_PortfolioD.png',
+  technologies: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
+  linkModal: '',
+  linkLive: 'https://theluisabarca.github.io/CapstoneJS-API-Webapp/dist/',
+  link2Source: 'https://github.com/TheLuisAbarca/CapstoneJS-API-Webapp',
+};
+const content02 = {
   name: 'ToDo List Web App',
   description: "'To-do list' is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.",
   feature_imageM: 'src/img/ToDo/img_Placeholder.png',
@@ -59,18 +71,6 @@ const content01 = {
   linkModal: '',
   linkLive: 'https://theluisabarca.github.io/To-DO_List/dist/',
   link2Source: 'https://github.com/TheLuisAbarca/To-DO_List',
-};
-const content02 = {
-  name: 'Multi-Post Stories',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  feature_imageM: 'src/img/img_Placeholder.png',
-  feature_imageD: 'src/img/img_Placeholder-Desktop.png',
-  feature_imageWorkM: 'src/img/Snapshoot_Portfolio.png',
-  feature_imageWorkD: 'src/img/Snapshoot_PortfolioD.png',
-  technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
-  linkModal: '',
-  linkLive: '',
-  link2Source: '',
 };
 const content03 = {
   name: 'Multi-Post Stories',

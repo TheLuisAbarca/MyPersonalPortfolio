@@ -73,28 +73,28 @@ const content02 = {
   link2Source: 'https://github.com/TheLuisAbarca/To-DO_List',
 };
 const content03 = {
-  name: 'Multi-Post Stories',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  name: 'BudgyTracker',
+  description: "a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. ",
   feature_imageM: 'src/img/img_Placeholder.png',
   feature_imageD: 'src/img/img_Placeholder-Desktop.png',
   feature_imageWorkM: 'src/img/Snapshoot_Portfolio.png',
   feature_imageWorkD: 'src/img/Snapshoot_PortfolioD.png',
-  technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
+  technologies: ['Ruby', 'Rails', 'React', 'CSS'],
   linkModal: '',
-  linkLive: '',
-  link2Source: '',
+  linkLive: 'https://budgy-tracker.herokuapp.com/',
+  link2Source: 'https://github.com/TheLuisAbarca/BudgyTracker_RoR',
 };
 const content04 = {
-  name: 'Multi-Post Stories',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  name: 'Microvago',
+  description: "A web application that helps you book your hotels. You can see the rooms available and book them. Also helps you to see the rooms that you have booked.",
   feature_imageM: 'src/img/img_Placeholder.png',
   feature_imageD: 'src/img/img_Placeholder-Desktop.png',
   feature_imageWorkM: 'src/img/Snapshoot_Portfolio.png',
   feature_imageWorkD: 'src/img/Snapshoot_PortfolioD.png',
-  technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
+  technologies: ['Ruby', 'Rails', 'React', 'TailwindCSS'],
   linkModal: '',
-  linkLive: '',
-  link2Source: '',
+  linkLive: 'https://microvago.netlify.app/',
+  link2Source: 'https://github.com/TheLuisAbarca/Final-Capstone-rails-backend',
 };
 
 const allcontent = [content01, content02, content03, content04];
